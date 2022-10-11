@@ -46,5 +46,5 @@ func main() {
 	}
 	config = c
 	http.HandleFunc("/", proxyPass)
-	log.Fatal(http.ListenAndServe(":", nil))
+	log.Fatal(http.ListenAndServe(":"+config.Port, nil))
 }

@@ -6,6 +6,7 @@ import (
 )
 
 type Config struct {
+	Port         string
 	ServerUrl    string
 	Replacements map[string]string
 }
